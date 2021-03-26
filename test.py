@@ -1,9 +1,5 @@
-from epilepsy_test import frame_test, split_test, subpath, check_gif
+from epilepsy_test import frame_test, split_test, check_gif
 from epilepsy_test_video import video_frame_test
-
-#---Test that subpath helper method works---
-assert subpath('gifs/test_case_1.gif') == 'gifs/test_case_1'
-assert subpath('videos/coffee.mp4') == 'videos/coffee'
 
 #---Test that flashing gifs are detected as flashing, non-flashing gifs are not---
 assert frame_test('gifs/animation.gif') == False
@@ -31,5 +27,6 @@ assert split_test('gifs/test_case_4.gif') == False
 
 #---Test video frame test---
 assert video_frame_test('videos/coffee.mp4') == False
+assert video_frame_test('videos/flashing.mp4') == True
 
 print("--All tests completed successfully!--")
