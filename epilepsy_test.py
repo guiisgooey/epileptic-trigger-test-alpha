@@ -43,7 +43,11 @@ def check_gif(file_path):
     if isinstance(file_path, BytesIO):
         return
     else:
-        file_ext = os.path.splitext(file_path)[1]
+        file_ext = ''
+        try:
+            file_ext = os.path.splitext(file_path)[1]
+        except:
+            print("Please use a suitable file type.")
         assert file_ext == '.gif', 'Please use a GIF file.'
 
 def quarter_gif_test(file_path, left, top, right, bottom, n=1):
