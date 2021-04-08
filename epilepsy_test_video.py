@@ -22,6 +22,3 @@ def video_frame_test(file_path, threshold=5):
                 e = True
         last = brightness.rms[0]
     return e
-
-def check_file(file_path):
-    pass
