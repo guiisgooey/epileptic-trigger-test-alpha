@@ -22,9 +22,7 @@ def frame_test(file_path, threshold=5):
         frame = Image.open(frames_obj)
         brightness = ImageStat.Stat(frame)
         current = brightness.rms[0]
-        print(current)
         if last is not None:
-            print(last)
             if (current > (last + last/threshold)) or (current < last - last/threshold):
                 e = True
         last = brightness.rms[0]
