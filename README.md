@@ -112,7 +112,7 @@ The purpose of test.py is to verify that functions within epilepsy_test.py are w
 
 ## Authors
 
-- **Andrew Wagner** - [GuiIsGooey](https://github.com/guiisgooey)
+- **Samantha Grey** - [sammygrey](https://github.com/sammygrey)
 
 ## License
 
